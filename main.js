@@ -2,6 +2,15 @@ function tocaSomPom(selectorAudio){
 const elemento = document.querySelector(selectorAudio);
 }
 
+if (elemento && elemento.localName === 'audio') {
+        elemento.play();
+    }
+    else {
+        //alert('Elemento não encontrado');
+        conole.log('Elemento não encontrado ou selector inválido');
+    }
+
+}
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //para
